@@ -1,13 +1,20 @@
 #include <iostream>
-
+#include<fstream>
 using namespace std;
 int main(){
 
-    int a;
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 
-    cin>>a;
+    string s;
+    getline(cin, s);
+    cout<<s;
 
-    cout<<a<<endl;
+
+    ofstream a;
+    a.open("output.txt");
+
+    a<<"hi";
 
     return 0;
 }
